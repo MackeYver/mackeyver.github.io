@@ -1,0 +1,167 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+}
+
+
+/* Main container for all the content */
+#main_container {
+    margin: 0 auto;
+    padding: 0;
+    width: 65%;
+    max-width: 1000px;
+    min-width: 400px;    
+    line-height: 1.5;
+}
+
+div.divisor {
+    border-bottom: 1px dotted #606dbc;
+    margin: 0 0 2em 0;
+    padding: 2em 0 1em 0;
+ }
+
+h2 {
+    color: #606dbc;
+    font-size: 22px;    
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 1.0em 0;
+    font-size: 16px;
+}
+
+
+/*background-color: lightblue;*/
+/*border: 1px solid red;*/
+
+/* Mine-me, brief info about me */
+#mini-me {
+    width: 175px;
+    padding: 0;    
+    margin: 4.0em auto 2.0em auto;        
+}
+
+#mini-me .image {
+    width: 90%;    
+    margin: 0 auto 1.25em auto;
+}
+
+.info h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.info p {
+    margin: 0 0 0.3em 0;
+    padding: 0;    
+    font-size: 15px;    
+    line-height: 1.3;
+}
+
+.info img {    
+    height: 16px;
+    padding: 0.25em 0.5em 0 0;
+}
+
+
+
+/* Navigation bar */
+ul.topnav {
+    list-style-type: none;
+    overflow: hidden;    
+    margin: 3em 0 2em 0;
+    padding: 0;   
+    border-bottom: 1.5px solid #606dbc;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;        
+    text-decoration: none;    
+    font-weight: bold;
+        
+    margin: 0;
+    padding: 0.8em 2em 0.8em 0;
+    
+    color: #606dbc;    
+}
+
+ul.topnav li a:hover {
+    color: black;    
+    /*background-image: repeating-linear-gradient(-45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);*/
+}
+
+ul.topnav li a:active {    
+    /*background-image: repeating-linear-gradient(-45deg, #465298, #465298 10px, #606dbc 10px, #606dbc 20px);*/
+    color: red;
+}
+
+
+
+/* Portfolio */
+.grid-container {        
+    display: grid;
+    grid-gap: 30px;    
+    margin: 0.5em 0 1em 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-cell {        
+    border: 1px solid black;
+    height: 400px;
+}
+
+.grid-image {
+    background-color: red;        
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.grid-text {
+    background-color: yellow;
+    width: 100%;     
+    height: 50%;
+ }
+
+.grid-image.image1 {
+    background-image: url("img/project_thumb_marching_squares.jpg");
+}
+
+.grid-image.image2 {
+    background-image: url("img/project_thumb_particles.jpg");
+}
+
+.grid-image.image3 {
+    background-image: url("img/project_thumb_pong.png");
+}
+
+
+/* Blog */
+#blog {
+}
+
+
+
+/* About me */
+#about_me {
+    
+}
+
+
+
+/* Smaller screens */
+@media screen and (max-width: 600px) {
+    ul .topnav li.right, ul.topnav li {
+        float: none;        
+    }    
+}
