@@ -8,12 +8,12 @@
 </head>
 
 <body>
-    <div id="main_container">
-
+    
+    <div id="header">
         <!-- About me, short version -->
         <div id="mini-me">
             <div class="image">
-                <img style="width: 100%;" src="img/detective_profile.png" alt="profile of a detective" />
+                <img style="width: 150px; height:130px;" src="img/detective_profile.png" alt="profile of a detective" />
             </div>
 
             <div class="info">
@@ -27,18 +27,20 @@
             </div>
         </div>
 
-
         <!-- Navigation bar -->
         <ul class="topnav">
             <li><a href="#portfolio">Portfolio</a></li>
             <!-- <li><a href="#blog">Blog</a></li> -->
             <li><a href="#about_me">About</a></li>
         </ul>
+    </div> 
 
 
+
+    <div id="main_container">
         <!-- About me -->
-        <div id="about_me" class="divisor">
-            <h2>About me</h2>
+        <div class="divisor">
+            <h2><span id="about_me"></span>About me</h2>
             <p>
                 A self-taught hobby-programmer turned serious.
             </p>
@@ -56,41 +58,41 @@
 
 
         <!-- Portfolio -->
-        <div id="portfolio" class="divisor">
-            <h2>Portfolio</h2>
-            <div class="grid-container">
-                <a href="https://github.com/MackeYver/marching_squares" target="_blank">
-                    <div class="grid-cell">
+        <div class="divisor">
+            <h2><span id="portfolio"></span>Portfolio</h2>
+            <div class="grid-container">                
+                <div class="grid-cell">
+                    <a href="https://github.com/MackeYver/marching_squares" target="_blank">
                         <div class="grid-image image1"></div>
                         <div class="grid-text">
                             <h1>MARCHING SQUARES</h1>
                             <h2>ALGORITHM</h2>
                             <p>Comparison of three (slightly) different implementations.</p>
                         </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/MackeYver/particles" target="_blank">
-                    <div class="grid-cell">
+                    </a>
+                </div>
+                
+                <div class="grid-cell">
+                    <a href="https://github.com/MackeYver/particles" target="_blank">
                         <div class="grid-image image2"></div>
                         <div class="grid-text">
                             <h1>PARTICLE SYSTEM</h1>
                             <h2>MULTITHREADING</h2>
                             <p>A multithreaded particle system, using Euler integration and a geometry shader</p>
                         </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/MackeYver/pong" target="_blank">
-                    <div class="grid-cell">
+                    </a>
+                </div>
+                    
+                <div class="grid-cell">
+                    <a href="https://github.com/MackeYver/pong" target="_blank">
                         <div class="grid-image image3"></div>
                         <div class="grid-text">
                             <h1>PONG</h1>
                             <h2>SIMPLE GAME</h2>
                             <p>Pong in Full-HD, 2D Collision detection and response with GJK and EPA.</p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>                
             </div>
         </div>
 
