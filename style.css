@@ -60,7 +60,7 @@ h2 {
     font-size: 1.4em;    
     padding: 0;
     margin: 0 0 0.25em 0;
-    text-shadow: 1px 1px 1px lightgray;
+    text-shadow: 0.5px 0.5px 0.5px lightgray;
 }
 
 p {
@@ -86,7 +86,7 @@ p {
 .info h2 {
     padding: 0;
     margin: 0;
-    text-shadow: 1px 1px 0.5px darkgray;
+    text-shadow: 1px 1px 0.5px lightgray;
 }
 
 .info p {
@@ -123,8 +123,7 @@ ul.topnav li a {
     font-weight: bold;        
     margin: 0;
     padding: 0em 2em 0.4em 0;
-    color: #3a69c8; /* primary_colour */
-    text-shadow: 1px 1px 0.5px lightgray;
+    color: #3a69c8; /* primary_colour */    
 }
 
 @media screen and (max-width: 335px) {
