@@ -249,7 +249,7 @@ h2 span {
 /* Adoption to screens witch smaller heights */
 @media screen and (max-height: 736px) {
     #header {
-        height: 110px;     
+        height: 112px;        
     }
 
     #mini-me {
