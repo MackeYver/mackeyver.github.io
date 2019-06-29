@@ -251,7 +251,7 @@ h2 span {
 
 
 /* Adoption to screens witch smaller heights */
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 770px) {
     #header {
         height: 112px;
     }
