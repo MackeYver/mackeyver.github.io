@@ -5,6 +5,10 @@
     font: normal 100% "Trebuchet MS", Helvetica, sans-serif;    
     background-color: white; /* colour_background */
     line-height: 1.4em;
+
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: 100%
 }
 
 
