@@ -61,7 +61,7 @@ p {
 
 h2 {
     color: #3a69c8; /* primary_colour */
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 600;
     padding: 0;
     margin: 0 0 0.35em 0;
@@ -70,7 +70,7 @@ h2 {
 
 h3 {
     color: #3a69c8; /* primary_colour */
-    font-size: 1.35em;
+    font-size: 1.3em;
     font-weight: 400;
     padding: 0;
     margin: 0 0 0.4em 0;
@@ -167,7 +167,7 @@ ul.main_navigation li a {
     margin: 0;
     padding: 0em 2em 0.4em 0;
     color: #3a69c8; /* primary_colour */
-    font-size: 1.25em;
+    font-size: 1.2em;
     font-weight: 400;
     text-shadow: 0.5px 0.5px 0.5px lightgray;    
 }
@@ -178,14 +178,6 @@ ul.main_navigation li a:hover {
 
 ul.main_navigation li a:active {    
     color: gold;
-}
-
-.main_navigation h2 {
-    color: #3a69c8; /* primary_colour */
-    font-size: 1.5em;    
-    padding: 0;
-    margin: 0;
-    text-shadow: 0.5px 0.5px 0.5px lightgray;
 }
 
 /*   Adoption to screens with smalle width */
@@ -363,47 +355,52 @@ ul.project_navigation li a:active {
 
 
 /* Adoption to screens witch smaller heights */
+img.small_nav_bar {
+    height: 0.9em;
+    display: none;
+}
+
 @media screen and (max-height: 770px) {
     #header {
-        height: 112px; /* header_height_small */
+        padding: 0.2em 0 0 0;
+        height: 35px; /* header_height_small */        
     }
 
     #mini-me {
-        padding: 0 0 0.5em 0;    
-    }
-
-    #mini-me .image {
         display: none;
-    }
-
-    ul.main_navigation {        
-        border-top: 1.5px dotted #3d75ed; /* colour_primary */
-        border-bottom: 1.5px dotted #3d75ed; /* colour_primary */
     }
 
     ul.main_navigation li a {
-        padding: 0.4em 2em 0.4em 0;
+        padding: 0.2em 2em 0.2em 0;
     }
     
-    .info {        
-        padding: 0.5em 0.7em 0 0;
-    }
-
-    .info img {        
-        padding: 0.5em 0.3em 0.2em 0;        
-    }
-
-    .info p {
-        display: none;
+    ul.main_navigation li a {
+        font-size: 1.1em;
     }
 
     #main_container {
-        margin: 120px auto 0 auto;
+        margin: 35px auto 0 auto;
     }
 
     /* Anchor hack due to fixed nav bar */
     h2 span {         
-        top: -112px; /* header_height_small */
+        top: -35px; /* header_height_small */
+    }
+
+    img.small_nav_bar {    
+        display: block;
+        padding: 0.1em 2em 0.1em 0;
+    }
+
+    li.small_nav_bar {
+        width: 3em;
+    }
+
+    h3.small_nav_bar {
+        padding: 0.1em 2em 0 0;
+        font-weight: 600;
+        font-size: 1.2em;
+        text-shadow: 1px 1px 0.5px lightgray;
     }
 }
 
