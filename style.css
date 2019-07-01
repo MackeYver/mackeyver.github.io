@@ -103,11 +103,11 @@ ul.compact_list {
 }
 
 /* Anchor hack due to fixed nav bar */
-h2 {
+h3 {
     position:relative; 
     z-index:-1;
 }
-h2 span { 
+h3 span { 
     position:absolute; 
     top:-320px; /* header_height */
 }
@@ -355,14 +355,18 @@ ul.project_navigation li a:active {
 
 
 /* Adoption to screens witch smaller heights */
-img.small_nav_bar {
-    height: 0.9em;
+.small_nav_bar {    
     display: none;
+}
+
+.width_2em {
+    width: 2.2em;
 }
 
 @media screen and (max-height: 770px) {
     #header {
         padding: 0.2em 0 0 0;
+        margin: 0 auto;
         height: 35px; /* header_height_small */        
     }
 
@@ -383,24 +387,23 @@ img.small_nav_bar {
     }
 
     /* Anchor hack due to fixed nav bar */
-    h2 span {         
-        top: -35px; /* header_height_small */
+    h3 span {         
+        top: -45px; /* header_height_small */
     }
 
-    img.small_nav_bar {    
+    .small_nav_bar {
         display: block;
-        padding: 0.1em 2em 0.1em 0;
     }
 
-    li.small_nav_bar {
-        width: 3em;
+    .small_nav_bar img {    
+        padding: 0.1em 1.2em 0.1em 0;
+        height: 0.9em;
     }
 
-    h3.small_nav_bar {
-        padding: 0.1em 2em 0 0;
+    .small_nav_bar h3 {
+        padding: 0.1em 1.2em 0 0;
         font-weight: 600;
         font-size: 1.2em;
-        text-shadow: 1px 1px 0.5px lightgray;
+        text-shadow: 1px 1px 0.5px lightgray;        
     }
 }
-
