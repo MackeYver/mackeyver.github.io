@@ -1,107 +1,141 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
-<head>    
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv='content-type' content='text/html; charset=UTF-8'>
     <meta name="author" content="Marcus Larsson">
     <meta name="description" content="Portfolio of Marcus Larsson">
     <meta name="keywords" content="Marcus Larsson portfolio programming c++ c game development">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">    
-    <link href="style.css" rel="stylesheet" type="text/css">        
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="dns-prefetch" href="https://github.com/mackeyver">
+    <!--<link rel="prefetch" href="https://github.com/mackeyver">-->
 
     <title>Marcus Larsson</title>
 </head>
 
+
 <body>
-    
-    <div id="header" class="main_width">
-        <!-- About me, short version -->
-        <div id="mini-me">
-            <div class="image">
-                <img style="width: 150px; height:130px;" src="img/detective_profile.png" alt="profile of a detective" />
+    <!-- Navigation bar -->
+    <div class="menu">
+        <span class="menu-item name">Marcus Larsson</span>
+        
+        <a class="menu-item" href="mailto:contact@pixelfeber.se">
+            <img class="menu-image" title="Mail me" alt="mail icon" src="img/icon_mail.png" />
+        </a>
+        
+        <a class="menu-item" href="href=https://github.com/mackeyver" target="_blank">
+            <img class="menu-image" title="My GitHub" alt="github icon" src="img/icon_github.png" />
+        </a>
+        
+        <a class="menu-item-right" href="#about_me">About</a>
+        <a class="menu-item-right" href="#portfolio">Portfolio</a>
+    </div>
+
+
+    <br>
+    <br>
+
+
+    <!-- Portfolio -->
+    <div>
+        <h2 id="portfolio">Portfolio</h2>
+        <div class="grid">
+            <!-- Puzzle-man -->
+            <div class="cell">                
+                <a href="project_puzzle-man.html">
+                    <img class="cell-image" src="img\project_thumbnail_puzzle-man.gif" width=250px>                
+
+                    <div class="cell-text">
+                        <div class="cell-header">Puzzle-man</div>
+                        <div class="cell-category">GAME</div>
+                        A puzzle game and a homage to Pac-man---but you're the ghosts!
+                        (Software rendering)
+                    </div>
+                </a>
             </div>
 
-            <div class="info">
-                <h2>Marcus Larsson</h2>
-                <p>
-                    Salmiak enthusiast<br>
-                    Helsingborg, Sweden<br>
-                </p>
-                <a href="mailto:contact@pixelfeber.se"><img title="Mail me" alt="mail icon" src="img/icon_mail.png" /></a>
-                <a href="https://github.com/mackeyver" target="_blank"><img title="My GitHub" alt="github icon" src="img/icon_github.png" /></a>
+            <!-- Pong -->
+            <div class="cell">
+                <a href="project_pong.html">
+                    <img class="cell-image" src="img\project_thumbnail_pong.gif" width=250px>
+
+                    <div class="cell-text">
+                        <div class="cell-header">Pong</div>
+                        <div class="cell-category">GAME</div>
+                        The classical game Pong.
+                        Collision detection and response<br>
+                        (GJK + EPA)
+                    </div>
+                </a>
             </div>
+
+            <!-- Marching squares -->
+            <div class="cell">
+                <a href="project_marching_squares.html">
+                    <img class="cell-image" src="img\project_thumbnail_marching_squares.png" width=250px>
+
+                    <div class="cell-text">
+                        <div class="cell-header">Marching squares</div>
+                        <div class="cell-category">ALGORITHM | CODE MODEL</div>
+                        Comparison of three (slightly) different implementations
+                    </div>
+                </a>
+            </div>
+
+            <!-- Particles -->
+            <div class="cell">
+                <a href="project_particles.html">
+                    <img class="cell-image" src="img\project_thumbnail_particles.png" width=250px>                
+
+                    <div class="cell-text">
+                        <div class="cell-header">Particles</div>
+                        <div class="cell-category">MULTITHREADED</div>                        
+                        Multithreaded particle simulation, using semi-explicit Euler integration and a geometry shader
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <p style="border-bottom:dotted;border-width:1px;border-color:black;"></p>
+    <br>
+    <br>
+
+
+    <!-- About me -->    
+    <div>
+        <h2 id="about_me">About me</h2>
+        <p>
+            A self-taught hobby-programmer turned serious.
+        </p>
+
+        <p>
+            Mainly programming in c++. <br />
+            Low-level programming from scratch without external libraries, only platform APIs.
+            Creating small projects both for learning purposes and for fun (some of which can be found 
+            on <a href="https://github.com/mackeyver" target="_blank">my GitHub</a>).
+        </p>
+
+        <p>
+            Also fiddling with some iOS development, both app development with Objective-C and game projects using Object-C/C++ and Metal.
+        </p>
+
+        <div>
+            <a href="mailto:contact@pixelfeber.se">
+                <img class="small-image" title="Mail me" alt="mail icon" src="img/icon_mail.png" />contact@pixelfeber.se
+            </a>
         </div>
 
-        <!-- Navigation bar -->
-        <ul class="main_navigation">            
-            <li class="small_nav_bar"><h3>Marcus Larsson</h3></li>
-            <li class="small_nav_bar width_2em"><a href="mailto:contact@pixelfeber.se"><img title="Mail me" alt="mail icon" src="img/icon_mail.png" /></a></li>
-            <li class="small_nav_bar width_2em"><a href="https://github.com/mackeyver" target="_blank"><img title="My GitHub" alt="github icon" src="img/icon_github.png" /></a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about_me">About</a></li>
-        </ul>
-    </div> 
-
-
-
-    <div id="main_container" class="main_width">
-        <!-- About me -->
-        <div class="divisor">
-            <h3><span id="about_me"></span>About me</h3>
-            <p>
-                A self-taught hobby-programmer turned serious.
-            </p>
-
-            <p>
-                Mainly programming in c++. <br />
-                Low-level programming from scratch without external libraries, only platform APIs.<br />
-                Creating small projects both for learning purposes and for fun (some of which can be found on <a href="https://github.com/mackeyver" target="_blank">my GitHub</a>).
-            </p>
-
-            <p>
-                Also fiddling with some iOS development, both app development with Objective-C and platform APIs and game projects using Object-C/C++ and Metal.
-            </p>
-        </div>
-
-
-        <!-- Portfolio -->
-        <div class="divisor">
-            <h3><span id="portfolio"></span>Portfolio</h3>            
-            <div class="grid-container">                
-                <div class="grid-cell">
-                    <a href="project_marching_squares.html">
-                        <div class="grid-image image1"></div>
-                        <div class="grid-text">
-                            <h1>MARCHING SQUARES</h1>
-                            <h2>ALGORITHM</h2>
-                            <p>Comparison of three (slightly) different implementations.</p>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="grid-cell">
-                    <a href="https://github.com/MackeYver/particles" target="_blank">
-                        <div class="grid-image image2"></div>
-                        <div class="grid-text">
-                            <h1>PARTICLE SYSTEM</h1>
-                            <h2>MULTITHREADING</h2>
-                            <p>A multithreaded particle system, using Euler integration and a geometry shader</p>
-                        </div>
-                    </a>
-                </div>
-                    
-                <div class="grid-cell">
-                    <a href="https://github.com/MackeYver/pong" target="_blank">
-                        <div class="grid-image image3"></div>
-                        <div class="grid-text">
-                            <h1>PONG</h1>
-                            <h2>SIMPLE GAME</h2>
-                            <p>Pong in Full-HD, 2D Collision detection and response with GJK and EPA.</p>
-                        </div>
-                    </a>
-                </div>                
-            </div>
+        <div>
+            <a href="href=https://github.com/mackeyver" target="_blank"><img class="small-image" title="My GitHub" alt="github icon" src="img/icon_github.png" />My GitHub page</a>
         </div>
     </div>
 </body>
