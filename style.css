@@ -2,16 +2,23 @@ body {
     max-width: 800px;
     margin: auto;
     /*font: normal 100% "Trebuchet MS", Helvetica, sans-serif;*/
-    font: normal 100% "Trebuchet MS", Helvetica, sans-serif;
+    font: normal 100% "Verdana";
+    font-size: 0.92em;
     line-height: 1.4em;
 }
 
 h2 {
-    margin-bottom: 0.6em;
+    margin-bottom: 0.8em;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color: #2c2c2c;    
+    letter-spacing: .025em;
+    text-shadow: 4px 4px 0 #e5e5e5;
+      
 }
 
 h3 {
     margin-bottom: 0.4em;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 
 ul {
@@ -30,11 +37,12 @@ ul {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-color: black;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 
 .menu-item {
     float: left;
-    padding: 1em 0.5em;/*14px 16px;*/
+    padding: 1em 0.5em;
     text-align: center;
     text-decoration: none;
     font-size: 1.2em;
@@ -42,20 +50,32 @@ ul {
 
 .menu-item-right {
     float: right;
-    padding: 1.2em 1.2em;/*14px 16px;*/
+    padding: 1.2em 1.2em;
     padding-right: 0;
     text-align: center;
     text-decoration: none;
     font-size: 1.0em;
 }
 
-.name {
+.name {    
+    font-size: 1.2em;
     padding-left: 0;
-    font-weight: bold;
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+
+    color: #2c2c2c;    
+    letter-spacing: .05em;
+    text-shadow: 
+      2px 2px 0 #d5d5d5, 
+      3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.menu a:hover {
-    color: gold;
+.menu a:hover {    
+    text-shadow: 
+      2px 2px 0 #d5d5d5, 
+      3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .menu-image {
@@ -65,63 +85,25 @@ ul {
 
 /* Grid */
 .grid {
-    display: grid;
-    /*grid-template-columns: 246px 246px 246px;
-    grid-template-rows: 250px 250px;
-    grid-gap: 31px;*/
+    display: grid; 
     grid-template-columns: 30.75% 30.75% 30.75%;
     grid-column-gap: 3.875%;
     grid-row-gap: 35px;
+    justify-content: center;
 }
-
-/*
-.cell {
-    border-width: 1px;
-    border-radius: 3px;
-    border-style: solid;
-
-    background-color:aqua;    
-    width: 250px;
-}
-*/
 
 .cell:hover {
-    /*
-    border: solid;
-    border-width: 1px;
-    margin: -1px;
-    border-width: 1px;    
-    border-color: black;
-    */
-    /*border: solid;
-    border-width: 1px;
-    margin: -1px;*/
-    box-shadow: 5px 5px 3px 1px darkgrey;
-    
-    /*       
-    box-shadow: 5px 5px 3px 1px darkgrey;     
-    border: 1px solid #3a69c8;*/
+    box-shadow: 
+        3px 3px 3px 0 lightgray,
+        4px 4px 4px 1px darkgray;
     position: relative;
     right: 3px;
     bottom: 3px;
 }
 
-.cell-image {
-    /*
-    border-radius: 2px;
-    border-bottom-style: solid;
-    border-width: 1px;
-    width: 250px;
-    height: 140px;
-    */
-    width: 100%;            
-}        
-
 .cell-text {
     padding: 0.2em 0.4em 0.6em 0.4em;
     margin: 0;
-    /*width: 250px;
-    height: 110px;*/
     font-size: 0.9em;
     line-height: 1.3em;
 }        
@@ -129,25 +111,75 @@ ul {
 .cell-header {
     font-weight: bold;
     font-size: 1.2em;
+    margin-bottom: 0.1em;
 }
 
-.cell-category {            
+.cell-category {
     font-weight: bold;
     font-size: 0.8em;
     color: darkgray;
-    padding-bottom: 0em;
+    padding-bottom: 0;
     margin-bottom: 0.3em;
 }
 
-.cell a, a:visited, a:hover, a:active {
+.cell a, .cell a:visited, .cell a:hover, .cell a:active {
     text-decoration: none;
     color: inherit;        
 }
 
-.center {
+.project-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     border-radius: 2px;
   }
+
+
+@media only screen and (max-width: 501px) {
+    body {
+        max-width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 250px;
+        grid-column-gap: 0;
+        grid-row-gap: 35px;
+    }
+}
+
+@media only screen and (min-width: 502px) and (max-width: 687px) {
+    body {
+        max-width: 80%;
+    }
+
+    .grid {
+        grid-template-columns: 250px;
+        grid-column-gap: 0;
+        grid-row-gap: 35px;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 849px) {
+    body {
+        max-width: 80%;
+    }
+
+    .grid {
+        grid-template-columns: 250px 250px;
+        grid-column-gap: 12%;
+        grid-row-gap: 35px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    body {
+        max-width: 800px;
+    }
+
+    .grid {
+        grid-template-columns: 250px 250px 250px;
+        grid-column-gap: 25px;
+        grid-row-gap: 35px;
+    }
+}
