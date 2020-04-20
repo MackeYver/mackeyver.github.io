@@ -4,7 +4,7 @@ body {
     /*font: normal 100% "Trebuchet MS", Helvetica, sans-serif;*/
     font: normal 100% "Verdana";
     font-size: 0.92em;
-    line-height: 1.4em;
+    line-height: 1.4em;    
 }
 
 h2 {
@@ -13,7 +13,6 @@ h2 {
     color: #2c2c2c;    
     letter-spacing: .025em;
     text-shadow: 3px 3px 0 #e5e5e5;
-      
 }
 
 h3 {
@@ -153,6 +152,13 @@ ul {
     width: 50%;
     border-radius: 2px;
   }
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
 
 @media only screen and (max-width: 350px) {
     body {
