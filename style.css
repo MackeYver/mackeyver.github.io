@@ -162,7 +162,6 @@ ul {
 @media only screen and (max-width: 570px) {
     body {
         max-width: 80%;
-        background-color: blue;
     }
 
     .grid {
@@ -204,7 +203,6 @@ ul {
 @media only screen and (min-width: 571px) and (max-width: 849px) {
     body {
         max-width: 80%;
-        background-color: yellow;
     }
 
     .grid {
