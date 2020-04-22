@@ -85,8 +85,8 @@ ul {
     font-size: 1.2em;       
 
     text-shadow: 
-      1px 1px 0 #d5d5d5, 
-      2px 2px 0 rgba(0, 0, 0, 0.2);
+      1px 1px 0 #d5d5d5;
+      
 }
 
 .menu-item-right a {
@@ -112,7 +112,8 @@ ul {
 
 .cell:hover {
     box-shadow: 
-        3px 3px 3px 0 lightgray,
+        0.5px 0.5px black,  
+        -1px -1px black,        
         4px 4px 4px 1px darkgray;
     position: relative;
     right: 3px;
