@@ -94,7 +94,7 @@ ul {
     color: black;
 }
 
-.menu-item-portfolio {
+.menu-item-projects {
     padding-left:0.8em;
     padding-right: 2px;
 }
@@ -194,7 +194,7 @@ ul {
         margin: 0;        
     }
 
-    .menu-item-portfolio {
+    .menu-item-projects {
         padding-left: 2em;
         padding-right: auto;
         margin: 0;
