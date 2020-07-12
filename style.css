@@ -4,13 +4,13 @@ body {
     /*font: normal 100% "Trebuchet MS", Helvetica, sans-serif;*/
     font: normal 100% "Verdana";
     font-size: 0.92em;
-    line-height: 1.4em;    
+    line-height: 1.4em;
 }
 
 h2 {
     margin-bottom: 0.8em;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-    color: #2c2c2c;    
+    color: #2c2c2c;
     letter-spacing: .025em;
     text-shadow: 3px 3px 0 #e5e5e5;
 }
@@ -42,14 +42,14 @@ ul {
 
 .menu a:hover {
     color: gold;
-    text-shadow: 
-      1px 1px 0 #a5a5a5, 
-      2px 2px 0 rgba(0, 0, 0, 0.8);      
+    text-shadow:
+      1px 1px 0 #a5a5a5,
+      2px 2px 0 rgba(0, 0, 0, 0.8);
 }
 
 .menu-item-left {
-    float: left;    
-    text-align: center;    
+    float: left;
+    text-align: center;
     font-size: 1.2em;
 }
 
@@ -57,19 +57,19 @@ ul {
     text-decoration: none;
 }
 
-.name {    
+.name {
     font-size: 1.2em;
     padding-left: 0;
     padding-right: 0.7em;
-    
+
     text-align: center;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
 
-    color: #2c2c2c;    
+    color: #2c2c2c;
     letter-spacing: .05em;
-    text-shadow: 
-      2px 2px 0 #d5d5d5, 
+    text-shadow:
+      2px 2px 0 #d5d5d5,
       3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -82,11 +82,11 @@ ul {
 
 .menu-item-right {
     float: right;
-    font-size: 1.2em;       
+    font-size: 1.2em;
 
-    text-shadow: 
+    text-shadow:
       1px 1px 0 #d5d5d5;
-      
+
 }
 
 .menu-item-right a {
@@ -103,7 +103,7 @@ ul {
 
 /* Grid */
 .grid {
-    display: grid; 
+    display: grid;
     grid-template-columns: 30.75% 30.75% 30.75%;
     grid-column-gap: 3.875%;
     grid-row-gap: 35px;
@@ -111,9 +111,9 @@ ul {
 }
 
 .cell:hover {
-    box-shadow: 
-        0.5px 0.5px black,  
-        -1px -1px black,        
+    box-shadow:
+        0.5px 0.5px black,
+        -1px -1px black,
         4px 4px 4px 1px darkgray;
     position: relative;
     right: 3px;
@@ -125,7 +125,7 @@ ul {
     margin: 0;
     font-size: 0.9em;
     line-height: 1.3em;
-}        
+}
 
 .cell-header {
     font-weight: bold;
@@ -143,7 +143,7 @@ ul {
 
 .cell a, .cell a:visited, .cell a:hover, .cell a:active {
     text-decoration: none;
-    color: inherit;        
+    color: inherit;
 }
 
 .project-image {
@@ -156,8 +156,7 @@ ul {
 
 .divider {
     border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    border-top: 2px dotted #aaa;
 }
 
 @media only screen and (max-width: 570px) {
@@ -185,13 +184,13 @@ ul {
     }
 
     .menu-image {
-        display: none;    
+        display: none;
     }
 
     .menu-item-about_me {
         padding-right: 2em;
         padding-left: auto;
-        margin: 0;        
+        margin: 0;
     }
 
     .menu-item-projects {
